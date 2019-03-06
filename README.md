@@ -43,9 +43,20 @@ host name "testserver" to it like so:
     $ node client.js
 
 
-7) Run the second client , from another terminal window or ssh session:
+7) Run the second client, from another terminal window or ssh session:
 
     $ node client2.js
-    
-You should see a bunch of message on the console indicating TLS and HTTPS has been authorized 
 
+see Server console for connection status    
+
+8) Lets make a  api call (via postman) that connects to tls server, server-server connecton
+
+    $ node server.js
+
+	in another shell window run:
+	$ node http-server.js
+	
+	make a GET request to localhost:8000/api/ssl-connect 
+	see server console for connection info
+
+    
