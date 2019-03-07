@@ -10,47 +10,42 @@ Install and Test
 
 Here are some instructions to run the TLS example clients and servers on your machine, should be straight forward.
 
-1) Install nodejs 
+1) Prerequisite:
 
-A convenient way to do this is to use the node version manager, NVM, see instructions here:
-https://github.com/creationix/nvm
+	Nodejs, Node Package Manager, openssl (if you wanna create certificates), 
 
-2) Test it:
 
-    $node.js -v
-    v10.9.0
-    
-
-3) Move to the directory that created and install:
+2) Move to the directory that created and install:
 
     $ cd tls-server-client/
+    $ npm install
+ 
 
-
-4) Because of the way my examples handle authentication it is required that the server find a host name via DNS that
+3) Because of the way my examples handle authentication it is required that the server find a host name via DNS that
 matches the one in the client connection. So to keep the server happy edit your system host file  (in windows OS: c:/windows/system32/drivers/etc/hosts)  and add the
 host name "testserver" to it like so:
 
     <your-network-ip>    testserver
 
 
-5) Run the server part:
+4) In a new shell window, run the server part:
 
     $ node server.js
 
 
-6) Run the client part, from another terminal window or ssh session:
+5) Run the client part, from another terminal window or ssh session:
 
     $ node client.js
 
 
-7) Run the second client, from another terminal window or ssh session:
+6) Run the second client, from another terminal window or ssh session:
 
     $ node client2.js
 
 	see Server console for connection status
 
 
-8) Lets make a  api call (via postman) that connects to tls server, server-server connecton
+7) Lets make a api call (via postman) that connects to tls server, server-server connecton
 
     $ node server.js
 
@@ -58,7 +53,7 @@ host name "testserver" to it like so:
 
 	$ node http-server.js
 	
-	make a GET request to `http://localhost:8000/api/ssl-connect` 
+	make a GET request to `http://localhost:8000/api/ssl-connect` using POSTMAN
 
 	see server console for connection info
 
