@@ -34,23 +34,23 @@ host name "testserver" to it like so:
     $ node server.js
 
 
-5) Run the client part, from another terminal window or ssh session:
+5) Run the client part, from another terminal window:
 
     $ node client.js
 
 
-6) Run the second client, from another terminal window or ssh session:
+6) Run the second client, from another terminal window :
 
     $ node client2.js
 
     see Server console for connection status
 
 
-7) Lets make a api call (via postman) that connects to tls server, server-server connecton
+7) Let us make a API call (via postman) that connects to a http server, which then makes a connection to the tls server, server-server connecton
 
     $ node server.js
 
-	in another shell window run:
+	in another terminal window run:
 
 	$ node http-server.js
 	

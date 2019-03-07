@@ -26,8 +26,8 @@ const server = tls.createServer(options, (socket) => {
     socket.on('error', (error) => {
         console.log(error);
     });
-    
-    socket.write('welcome!\n');
+    const datetime =  +(new Date);
+    socket.write('welcome!.. you are now authorized to use this Server :' + datetime + '\n' );
     socket.setEncoding('utf8');
     socket.pipe(process.stdout);
     socket.pipe(socket);
