@@ -18,6 +18,7 @@ Here are some instructions to run the TLS example clients and servers on your ma
 2) Move to the directory that created and install:
 
     $ cd tls-server-client/
+    
     $ npm install
  
 
@@ -42,7 +43,7 @@ host name "testserver" to it like so:
 
     $ node client2.js
 
-	see Server console for connection status
+    see Server console for connection status
 
 
 7) Lets make a api call (via postman) that connects to tls server, server-server connecton
