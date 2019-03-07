@@ -71,10 +71,10 @@ const sslRouter = new Router({
   });
 
 // getting the home route
-sslRouter.get('/ssl', makeTlsConn);
+sslRouter.get('/ssl-connect', makeTlsConn);
 
-// getting the home route
-sslRouter.post('/ssl', makeTlsConn);
+// // getting the home route
+// sslRouter.post('/ssl', makeTlsConn);
 
 app.use(sslRouter.routes());
 app.use(sslRouter.allowedMethods());

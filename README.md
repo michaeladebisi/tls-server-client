@@ -47,16 +47,19 @@ host name "testserver" to it like so:
 
     $ node client2.js
 
-see Server console for connection status    
+	see Server console for connection status
+
 
 8) Lets make a  api call (via postman) that connects to tls server, server-server connecton
 
     $ node server.js
 
 	in another shell window run:
+
 	$ node http-server.js
 	
-	make a GET request to localhost:8000/api/ssl-connect 
+	make a GET request to `http://localhost:8000/api/ssl-connect` 
+
 	see server console for connection info
 
     
