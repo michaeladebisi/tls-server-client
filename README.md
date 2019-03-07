@@ -25,7 +25,7 @@ Here are some instructions to run the TLS example clients and servers on your ma
 matches the one in the client connection. So to keep the server happy edit your system host file  (in windows OS: c:/windows/system32/drivers/etc/hosts)  and add the
 host name "testserver" to it like so:
 
-    <<your-network-ip>>    testserver
+    [ your-network-ip ]    testserver
 
 
 4) In a new shell window, run the server part:
