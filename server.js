@@ -9,7 +9,7 @@ const options = {
     requestCert: true, 
     rejectUnauthorized: true
 }; 
-let clients = []
+let clients = [];
 
 const server = tls.createServer(options, (socket) => {
 
